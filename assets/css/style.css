@@ -1,0 +1,135 @@
+/*
+? fonts 
+ */
+@font-face {
+    font-family: "SansVar";
+    src: url("../fonts/DMSansVar.ttf");
+}
+
+@font-face {
+    font-family: "MontVar";
+    src: url("../fonts/MontserratVar.ttf");
+}
+
+@font-face {
+    font-family: "NunitoVar";
+    src: url("../fonts/NunitoVar.ttf");
+}
+
+@font-face {
+    font-family: "UrbanistVar";
+    src: url("../fonts/UrbanistVar.ttf");
+}
+
+/* 
+? Variablen 
+*/
+
+:root {
+    /* colors */
+    --main-green: #024f44;
+    --light-green: #f3fffc;
+
+    /* fonts */
+    --SansVar: "SansVar";
+    --MontVar: "MontVar";
+    --NunitoVar: "NunitoVar";
+    --UrbanistVar: "UrbanistVar";
+}
+
+/*
+! ============== General Styling ==============
+*/
+
+html {
+    font-size: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*
+! ============== Header Styling ==============
+*/
+header {
+    background-color: var(--main-green);
+    padding: 0 5vw 7vh 5vw;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navigation nav {
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .navigation nav a {
+    color: #eff7f5;
+    font-family: var(--SansVar);
+    font-size: 1.5rem;
+}
+
+header .navigation div {
+    width: 12vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .bigHeading {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    color: #eff7f5;
+    font-family: var(--MontVar);
+}
+
+header .bigHeading div:nth-of-type(1) h1 {
+    width: 35vw;
+    font-family: var(--NunitoVar);
+    font-size: 6rem;
+    font-weight: 600;
+    margin-bottom: 13vh;
+}
+
+header .bigHeading .shopDescription {
+    font-size: 1.5rem;
+    width: 30vw;
+    margin-bottom: 7vh;
+}
+
+header .bigHeading div:nth-of-type(1) div {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+header .bigHeading div div p:nth-of-type(1){
+    background-color: #eff7f5;
+    color: var(--main-green);
+    padding: 5% 15%;
+}
+
+.threeImgs {
+    display: flex;
+    width: 47%;
+    align-items: start;
+}
