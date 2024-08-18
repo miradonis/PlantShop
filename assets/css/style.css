@@ -65,34 +65,45 @@ a {
 */
 header {
     background-color: var(--main-green);
-    padding: 0 5vw 7vh 5vw;
+    padding: 3vh 9vw 7vh 9vw;
 }
 
-header .navigation {
+/* navigation */
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .navigation nav {
-    width: 20vw;
+.navigation nav {
+    width: 24vw;
     display: flex;
     justify-content: space-between;
 }
 
-header .navigation nav a {
+.navigation nav a {
     color: #eff7f5;
     font-family: var(--SansVar);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
-header .navigation div {
-    width: 12vw;
+.navigation nav a img {
+    margin-bottom: 2%;
+    width: 10px;
+}
+
+.navigation .icons {
+    width: 24vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 
-header .bigHeading {
+.navigation .icons img {
+    margin-right: 5%;
+}
+/* end navigation */
+
+.bigHeading {
     margin-top: 15vh;
     display: flex;
     justify-content: space-evenly;
@@ -100,36 +111,139 @@ header .bigHeading {
     font-family: var(--MontVar);
 }
 
-header .bigHeading div:nth-of-type(1) h1 {
-    width: 35vw;
+.bigHeading div:nth-of-type(1) h1 {
     font-family: var(--NunitoVar);
     font-size: 6rem;
     font-weight: 600;
     margin-bottom: 13vh;
 }
 
-header .bigHeading .shopDescription {
+.shopDescription {
     font-size: 1.5rem;
     width: 30vw;
     margin-bottom: 7vh;
 }
 
-header .bigHeading div:nth-of-type(1) div {
-    width: 70%;
+.bigHeading div:nth-of-type(1) div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     font-size: 1.5rem;
 }
 
-header .bigHeading div div p:nth-of-type(1){
+.bigHeading div div p:nth-of-type(1){
     background-color: #eff7f5;
     color: var(--main-green);
-    padding: 5% 15%;
+    padding: 2% 5%;
+    margin-right: 7%;
 }
 
-.threeImgs {
+/* Three Images Box */
+.firstImg {
+    background-image: url("../img/headerImgs/guenePflanze.png");
+    background-repeat: no-repeat;
+    width: 15vw;
+    height: 27vh;
+    margin: 0 9px 9px 0;
+    padding: 10%;
+}
+
+.secondImg {
+    background-image: url("../img/headerImgs/kaktus.png");
+    background-repeat: no-repeat;
+    width: 15vw;
+    height: 30vh;
+    padding: 10%;
+}
+
+.thirdImg {
+    background-image: url("../img/headerImgs/tulpen.png");
+    background-repeat: no-repeat;
+    width: 35vw;
+    height: 61vh;
+    padding: 2%;
+}
+
+/* buttons imgs */
+.firstImg p,
+.secondImg p,
+.thirdImg p {
+    background-color: #024f44;
+    width: 7vw;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+/*
+! ============== Featured Styling ==============
+*/
+.featured {
+    padding: 10vh 0;
+}
+.featured .sectionsHeading {
+    font-family: var(--UrbanistVar);
+    color: var(--main-green);
+    margin-bottom: 10vh;
+}
+
+.sectionsHeading {
     display: flex;
-    width: 47%;
-    align-items: start;
+    align-items: center;
+    justify-content: space-between;
+    width: 83%;
+    margin-left: 8vw;
+}
+
+.sectionsHeading h2 {
+    font-size: 3rem;
+}
+
+.sectionsHeading p {
+    font-size: 2rem;
+}
+
+.sliderBox {
+    margin: 0 0 10vh 8vw;
+    overflow-x: scroll;
+    /* evtl scrollbalken verschwinden lassen und durch einen pfeil ersetzen, der bei klick nach rechts scrollt */
+    white-space: nowrap;
+}
+
+.sliderBox .sliderCard {
+    display: inline-block;
+    margin-right: 2vw;
+}
+
+.singleCardInfo div:nth-of-type(1) {
+    margin: 2vh 0;
+    display: flex;
+    justify-content: space-between;
+    color: #024f44;
+    font-family: var(--UrbanistVar);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.colorAndBuy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.potColor {
+    flex-direction: column;
+}
+
+.buyPlant {
+    color: #024f44;
+    border: 1px solid #024f44;
+    font-family: var(--UrbanistVar);
+    padding: 3% 10%;
+    font-size: 1.5rem;
+}
+
+.buyPlant:hover {
+    background-color: #024f44;
+    color: white;
 }
