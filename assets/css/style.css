@@ -178,10 +178,11 @@ header {
 /*
 ! ============== Featured Styling ==============
 */
+/* styling repeats itself */
 .featured {
     padding: 10vh 0;
 }
-.featured .sectionsHeading {
+.sectionsHeading {
     font-family: var(--UrbanistVar);
     color: var(--main-green);
     margin-bottom: 10vh;
@@ -202,6 +203,7 @@ header {
 .sectionsHeading p {
     font-size: 2rem;
 }
+/* ================================= */
 
 .sliderBox {
     margin: 0 0 10vh 8vw;
@@ -270,3 +272,62 @@ header {
 .searchAndFilter article input::placeholder {
     color: #024f44;
 }
+
+
+/*
+! ============== Colorful Styling ==============
+*/
+/* styling repeats itself */
+.colorful {
+    padding: 10vh 0;
+}
+.sectionsHeading {
+    font-family: var(--UrbanistVar);
+    color: var(--main-green);
+    margin-bottom: 10vh;
+}
+
+.sectionsHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 83%;
+    margin-left: 8vw;
+}
+
+.sectionsHeading h2 {
+    font-size: 3rem;
+}
+
+.sectionsHeading p {
+    font-size: 2rem;
+}
+/* ========================================== */
+.zoomBox {
+    overflow: hidden;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.zoomBox div {
+    display: inline;
+    height: auto;
+    width: 20vw;
+    margin-right: 3vw;
+    overflow: hidden;
+}
+
+.zoomBox div img {
+    transition: transform .5s ease;
+}
+
+.zoomBox div img:hover {
+    transform: scale(1.5);
+    filter: hue-rotate(90deg);
+}
+
+
+/*
+! ============== Colorful Styling ==============
+*/
