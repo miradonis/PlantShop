@@ -182,18 +182,15 @@ header {
 .featured {
     padding: 10vh 0;
 }
+
 .sectionsHeading {
     font-family: var(--UrbanistVar);
     color: var(--main-green);
-    margin-bottom: 10vh;
-}
-
-.sectionsHeading {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 83%;
-    margin-left: 8vw;
+    width: 78%;
+    margin: 10vh auto;
 }
 
 .sectionsHeading h2 {
@@ -206,7 +203,7 @@ header {
 /* ================================= */
 
 .sliderBox {
-    margin: 0 0 10vh 8vw;
+    margin: 0 0 10vh 11vw;
     overflow-x: scroll;
     /* evtl scrollbalken verschwinden lassen und durch einen pfeil ersetzen, der bei klick nach rechts scrollt */
     white-space: nowrap;
@@ -254,13 +251,15 @@ header {
 /* search and filter */
 .searchAndFilter {
     background-color: var(--light-green);
-    padding: 5% 15%;
+    padding: 5% 5%;
 }
 
 .searchAndFilter article {
     height: 5em;
     display: flex;
     justify-content: space-evenly;
+    width: 90%;
+    margin: 10vh auto;
 }
 
 .searchAndFilter article input {
@@ -277,44 +276,21 @@ header {
 /*
 ! ============== Colorful Styling ==============
 */
-/* styling repeats itself */
 .colorful {
     padding: 10vh 0;
 }
-.sectionsHeading {
-    font-family: var(--UrbanistVar);
-    color: var(--main-green);
-    margin-bottom: 10vh;
-}
 
-.sectionsHeading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 83%;
-    margin-left: 8vw;
-}
-
-.sectionsHeading h2 {
-    font-size: 3rem;
-}
-
-.sectionsHeading p {
-    font-size: 2rem;
-}
-/* ========================================== */
 .zoomBox {
     overflow: hidden;
-    padding: 0 10%;
+    padding: 0 7%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .zoomBox div {
     display: inline;
     height: auto;
-    width: 20vw;
-    margin-right: 3vw;
+    width: 16vw;
     overflow: hidden;
 }
 
@@ -329,5 +305,38 @@ header {
 
 
 /*
-! ============== Colorful Styling ==============
+! ============== Plant Stands Styling ==============
 */
+.plantStands {
+    background-color: var(--light-green);
+    padding: 2% 0;
+    margin-bottom: 10vh;
+}
+
+.plantStands article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2% 10% 9%;
+}
+
+.plantStands article img {
+    width: 24vw;
+}
+
+.plantStands article div {
+    display: flex;
+    color: #024f44;
+    font-size: 2rem;
+    font-family: var(--UrbanistVar);
+    width: 5vw;
+}
+
+
+/*
+! ============== Free Shipping Styling ==============
+*/
+.freeShipping article {
+    background-image: url("../img/freeShippImg.png");
+
+}
