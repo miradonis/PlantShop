@@ -65,7 +65,7 @@ a {
 */
 header {
     background-color: var(--main-green);
-    padding: 3vh 9vw 7vh 9vw;
+    padding: 3vh 9vw 15vh 9vw;
     margin-bottom: 5vh;
 }
 
@@ -196,10 +196,10 @@ header {
 /*
 ! ============== Featured Styling ==============
 */
-/* styling repeats itself */
+/* ?styling repeats itself */
 .featured,
 .colorful {
-    padding: 5vh 0;
+    /* padding: 2vh 0; */
 }
 
 .sectionsHeading {
@@ -219,7 +219,7 @@ header {
 .sectionsHeading p {
     font-size: 2rem;
 }
-/* ================================= */
+/* ?================================= */
 
 .sliderBox {
     margin: 0 0 10vh 11vw;
@@ -270,7 +270,7 @@ header {
 /* search and filter */
 .searchAndFilter {
     background-color: var(--light-green);
-    padding: 5% 5%;
+    padding: .5% 5%;
 }
 
 .searchAndFilter article {
@@ -325,7 +325,7 @@ header {
 .plantStands {
     background-color: var(--light-green);
     padding: 2% 0;
-    margin-bottom: 10vh;
+    margin: 10vh 0;
 }
 
 .plantStands article {
@@ -351,7 +351,42 @@ header {
 /*
 ! ============== Free Shipping Styling ==============
 */
-.freeShipping article {
+.freeShipping {
+    padding: 5% 0 8% 7%;
+    margin-bottom: 10vh;
     background-image: url("../img/freeShippImg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #be9382;
+    font-family: "UrbanistVar";
+}
 
+.freeShippingHeading {
+    font-size: 5rem;
+}
+
+.freeShipping article:nth-of-type(1) {
+    margin-bottom: 7vh;
+}
+
+.freeShipping article:nth-of-type(1) p:nth-of-type(2) {
+    font-size: 2rem;
+}
+
+.numberAndEmail {
+    font-size: 1.5rem;
+}
+
+.numberAndEmail div {
+    display: flex;
+    align-items: center;
+}
+
+.numberAndEmail img {
+    width: 20px;
+    margin-right: 1%;
+}
+
+.numberAndEmail div:nth-of-type(1) {
+    margin-bottom: 1vh;
 }
