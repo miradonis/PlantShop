@@ -353,7 +353,8 @@ header {
 */
 .freeShipping {
     padding: 5% 0 8% 7%;
-    margin-bottom: 10vh;
+    width: 79vw;
+    margin: 0 auto 15vh auto;
     background-image: url("../img/freeShippImg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -370,7 +371,8 @@ header {
 }
 
 .freeShipping article:nth-of-type(1) p:nth-of-type(2) {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-top: 1vh;
 }
 
 .numberAndEmail {
@@ -390,3 +392,14 @@ header {
 .numberAndEmail div:nth-of-type(1) {
     margin-bottom: 1vh;
 }
+
+
+/*
+! ============== Google Maps Styling ==============
+*/
+.googleMap {
+    width: 79vw;
+    margin: 0 auto 10vh auto;
+    overflow: hidden;
+}
+
