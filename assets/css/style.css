@@ -59,6 +59,27 @@ a {
     text-decoration: none;
 }
 
+/* ?================================= */
+/* ?styling repeats in sections */
+.sectionsHeading {
+    font-family: var(--UrbanistVar);
+    color: var(--main-green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 77.5%;
+    margin: 10vh auto;
+}
+
+.sectionsHeading h2 {
+    font-size: 3rem;
+}
+
+.sectionsHeading p {
+    font-size: 2rem;
+}
+/* ?================================= */
+
 
 /*
 ! ============== Header Styling ==============
@@ -69,7 +90,7 @@ header {
     margin-bottom: 5vh;
 }
 
-/* navigation */
+/* ============== navigation =============== */
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -102,12 +123,14 @@ header {
 .navigation .icons img {
     margin-right: 5%;
 }
-/* end navigation */
+/* ============= end navigation ============= */
 
 .bigHeading {
+    width: 20vw;
     margin-top: 15vh;
     display: flex;
     justify-content: space-evenly;
+    gap: 0 9vw;
     color: #eff7f5;
     font-family: var(--MontVar);
 }
@@ -137,22 +160,21 @@ header {
     padding: 2% 5%;
     margin-right: 7%;
     cursor: pointer;
-
 }
 
-/* test grid */
+/* ============= Three Images Box ============= */
 .threeImgs {
     display: grid;
-    grid-template-columns: 18vw 25vw;
-    grid-template-rows: 1fr 1fr;
-    gap: 0 10px;
+    grid-template-columns: 15vw 25vw;
+    grid-template-rows: 30vh 30vh;
+    gap: 10px 10px;
 }
 
-/* Three Images Box */
 .firstImg {
     background-image: url("../img/headerImgs/guenePflanze.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -163,6 +185,7 @@ header {
     background-image: url("../img/headerImgs/kaktus.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -172,6 +195,7 @@ header {
 .thirdImg {
     background-image: url("../img/headerImgs/tulpen.png");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -179,7 +203,7 @@ header {
     grid-row-end: 3;
 }
 
-/* buttons imgs */
+/* =========== buttons on imgs ============ */
 .firstImg p,
 .secondImg p,
 .thirdImg p {
@@ -196,31 +220,6 @@ header {
 /*
 ! ============== Featured Styling ==============
 */
-/* ?styling repeats itself */
-.featured,
-.colorful {
-    /* padding: 2vh 0; */
-}
-
-.sectionsHeading {
-    font-family: var(--UrbanistVar);
-    color: var(--main-green);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 78%;
-    margin: 10vh auto;
-}
-
-.sectionsHeading h2 {
-    font-size: 3rem;
-}
-
-.sectionsHeading p {
-    font-size: 2rem;
-}
-/* ?================================= */
-
 .sliderBox {
     margin: 0 0 10vh 11vw;
     overflow-x: scroll;
@@ -267,7 +266,7 @@ header {
     color: white;
 }
 
-/* search and filter */
+/* ================ search and filter ================ */
 .searchAndFilter {
     background-color: var(--light-green);
     padding: .5% 5%;
@@ -315,8 +314,19 @@ header {
 
 .zoomBox div img:hover {
     transform: scale(1.5);
-    filter: hue-rotate(90deg);
+    /* filter: hue-rotate(90deg); */
+    filter: grayscale(40%);
+    /* hier muß noch ein button mit schrift erscheinen beim hover */
 }
+
+.magicParagraph {
+    margin-bottom: -10vh;
+}
+
+.magicParagraph:hover {
+    font-size: 2rem;
+}
+
 
 
 /*
@@ -402,4 +412,3 @@ header {
     margin: 0 auto 10vh auto;
     overflow: hidden;
 }
-
