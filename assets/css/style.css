@@ -77,6 +77,11 @@ a {
 
 .sectionsHeading p {
     font-size: 2rem;
+    cursor: pointer;
+}
+
+.sectionsHeading p:hover {
+    text-decoration: underline;
 }
 /* ?================================= */
 
@@ -87,7 +92,6 @@ a {
 header {
     background-color: var(--main-green);
     padding: 3vh 9vw 15vh 9vw;
-    margin-bottom: 5vh;
 }
 
 /* ============== navigation =============== */
@@ -95,6 +99,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 7%;
 }
 
 .navigation nav {
@@ -106,7 +111,11 @@ header {
 .navigation nav a {
     color: #eff7f5;
     font-family: var(--SansVar);
-    font-size: 1.7rem;
+    font-size: 2rem;
+}
+
+.navigation nav a:hover {
+    color: #e8c8bc;
 }
 
 .navigation nav a img {
@@ -126,25 +135,26 @@ header {
 /* ============= end navigation ============= */
 
 .bigHeading {
-    width: 20vw;
-    margin-top: 15vh;
     display: flex;
-    justify-content: space-evenly;
-    gap: 0 9vw;
+    justify-content: space-between;
+    align-items: center;
     color: #eff7f5;
     font-family: var(--MontVar);
 }
 
-.bigHeading div:nth-of-type(1) h1 {
+.bigHeading .headingBox {
+    width: 25vw;
+}
+
+h1 {
     font-family: var(--NunitoVar);
-    font-size: 6rem;
+    font-size: 8rem;
     font-weight: 600;
     margin-bottom: 13vh;
 }
 
 .shopDescription {
     font-size: 1.5rem;
-    width: 30vw;
     margin-bottom: 7vh;
 }
 
@@ -157,8 +167,19 @@ header {
 .bigHeading div div p:nth-of-type(1){
     background-color: #eff7f5;
     color: var(--main-green);
+    border: 1px solid var(--main-green);
     padding: 2% 5%;
     margin-right: 7%;
+    cursor: pointer;
+}
+
+.bigHeading div div p:nth-of-type(1):hover {
+    color: #eff7f5;
+    background-color: var(--main-green);
+    border: 1px solid #eff7f5;
+}
+
+.bigHeading div div p:nth-of-type(2){
     cursor: pointer;
 }
 
@@ -166,7 +187,7 @@ header {
 .threeImgs {
     display: grid;
     grid-template-columns: 15vw 25vw;
-    grid-template-rows: 30vh 30vh;
+    grid-template-rows: 34vh 40vh;
     gap: 10px 10px;
 }
 
@@ -229,7 +250,7 @@ header {
 
 .sliderBox .sliderCard {
     display: inline-block;
-    margin-right: 2vw;
+    margin: 0 2vw 4vh 0;
 }
 
 .singleCardInfo div:nth-of-type(1) {
@@ -242,24 +263,18 @@ header {
     font-weight: 600;
 }
 
-.colorAndBuy {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2vh;
-}
-
-.potColor {
-    flex-direction: column;
-}
-
 .buyPlant {
+    width: 5vw;
+    text-align: center;
     color: #024f44;
     border: 1px solid #024f44;
     font-family: var(--UrbanistVar);
     padding: 3% 10%;
     font-size: 1.5rem;
+    cursor: pointer;
 }
+
+
 
 .buyPlant:hover {
     background-color: #024f44;
@@ -269,7 +284,7 @@ header {
 /* ================ search and filter ================ */
 .searchAndFilter {
     background-color: var(--light-green);
-    padding: .5% 5%;
+    padding: .5% 4%;
 }
 
 .searchAndFilter article {
