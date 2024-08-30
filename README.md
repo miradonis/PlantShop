@@ -1,16 +1,22 @@
 # PlantShop
+<br>
+<br>
+<br>
 
 ## *Projektbeschreibung:*
 
 Im Moment besteht das Projekt nur aus HTML und CSS und ist noch nicht fertiggestellt. Es wird jedoch im Laufe der Zeit weiter ausgebaut und verbessert.
 
+<br>
+<br>
 
 ## *Technologie:*
 
 HTML: Wird verwendet, um die Struktur der Webseite und der Inhalte zu erstellen.
 CSS: Verantwortlich für das Design und Layout der Webseite, um ein ansprechendes Nutzererlebnis zu gewährleisten.
 
-
+<br>
+<br>
 
 ## *In zukünftigen Versionen des Projekts sind folgende Funktionen geplant:*
 
